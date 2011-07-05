@@ -51,10 +51,7 @@ class Edge {
 	void removeJointPoint(RectangularShape jp) {
 		jointPoints.remove(jp);
 	}
-
-	
-
-	boolean contains(int x, int y, double precision) {
+    boolean contains(int x, int y, double precision) {
 		double x1 = v1.shape.getCenterX();
 		double y1 = v1.shape.getCenterY();
 		for (RectangularShape jp : jointPoints) {
